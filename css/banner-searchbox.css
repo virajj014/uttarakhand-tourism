@@ -9,12 +9,13 @@
   display: flex;
 }
 
+
+
 ::selection {
   color: #fff;
   background: #664aff;
 }
-
-.search-input .search-input {
+.searchbox .search-input {
   background: #fff;
   width: 100%;
   border-radius: 5px;
