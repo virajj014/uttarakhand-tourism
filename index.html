@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/banner-searchbox.css">
+    <link rel="stylesheet" href="css/banner-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <style>
+  
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav{
+    height: 50px;
+    background-color: rgb(182, 182, 182);
+  }
+  </style>
+
+  <body>
+    <nav>(place for nav-bar)</nav>
+    <div class="slider-content">
+      <div class="searchbox">
+        
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Type to search places..">
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+
+      </div>
+
+      <div class="myslider_container">
+        <button
+          class="slidechange-btn left"
+          id="left_slider"
+          onclick="leftsliderbtn()"
+        >
+          <
+        </button>
+        <div class="slider_image">
+          <img src="slider-images/1.png" alt="" id="slider-images" />
+        </div>
+        
+        <button
+          class="slidechange-btn right"
+          id="right_slider"
+          onclick="rightsliderbtn()"
+        >
+          >
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="js/banner-searchbox-suggestions.js"></script>
+  <script>
+    
+    const slideimage = [
+    "slider-images/1.png",
+      "slider-images/2.png",
+      "slider-images/3.png",
+      "slider-images/4.png",
+      "slider-images/5.png",
+      "slider-images/6.png",
+      "slider-images/7.png",
+      "slider-images/8.png",
+      "slider-images/9.png"
+    ];
+    let i = 0;
+    setInterval(sliderchangeFunc, 3000)
+    function sliderchangeFunc(){
+      if (i == slideimage.length){i = 0;}
+      document.getElementById("slider-images").src = slideimage[i];
+      i++;
+    }
+    //   document.getElementById("slider-images").src = slideimage[i];
+
+    let leftsliderbtn = () => {
+      if (i == 0) {
+        i = slideimage.length - 1;
+        document.getElementById("slider-images").src = slideimage[i];
+      } else {
+        --i;
+        document.getElementById("slider-images").src = slideimage[i];
+      }
+    };
+
+    let rightsliderbtn = () => {
+      if (i == slideimage.length - 1) {
+        i = 0;
+        document.getElementById("slider-images").src = slideimage[i];
+      } else {
+        ++i;
+        document.getElementById("slider-images").src = slideimage[i];
+      }
+    };
+  </script>
+</html>
