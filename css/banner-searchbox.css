@@ -9,8 +9,6 @@
   display: flex;
 }
 
-
-
 ::selection {
   color: #fff;
   background: #664aff;
@@ -57,7 +55,9 @@
 }
 .search-input.active .autocom-box li {
   display: block;
+  font-size: 20px;
 }
+
 .autocom-box li:hover {
   background: #efefef;
 }
@@ -84,29 +84,31 @@
   }
 
   .search-input .icon {
-    
     height: 40px;
     width: 40px;
     line-height: 40px;
     font-size: 18px;
+  }
 }
-}
+
 
 @media (max-width: 600px) {
-    .searchbox {
-      width: 50%;
-    }
-    .search-input input {
-      height: 30px;
-      font-size: 10px;
-    }
-  
-    .search-input .icon {
-      
-      height: 30px;
-      width: 30px;
-      line-height: 30px;
-      font-size: 15px;
+  .searchbox {
+    width: 50%;
   }
+  .search-input input {
+    height: 30px;
+    font-size: 13px;
   }
 
+  .search-input .icon {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .search-input.active .autocom-box li {
+    font-size: 13px;
+  }
+
+}
