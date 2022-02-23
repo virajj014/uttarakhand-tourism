@@ -5,39 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/banner-searchbox.css">
-    <link rel="stylesheet" href="css/banner-slider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/banner-searchbox.css" />
+    <link rel="stylesheet" href="css/banner-slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/skill-section.css" />
   </head>
   <style>
-  
-  
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  nav{
-    height: 50px;
-    background-color: rgb(182, 182, 182);
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    :root {
+      --color-1: #4aff90;
+      --color-2: #545454;
+      --card-color1: rgb(0, 209, 0);
+
+      --card-color2: rgb(209, 209, 0);
+      --card-color3: rgb(0, 209, 129);
+      --card-color4: rgb(0, 96, 185);
+      --card-color5: rgb(209, 209, 0);
+      --card-color6: rgb(0, 209, 0);
+      --card-color7: rgb(0, 96, 185);
+      --card-color8: rgb(0, 209, 129);
+      --card-color9: rgb(209, 209, 0);
+      --card-color10: rgb(0, 209, 0);
+    }
+    nav {
+      height: 50px;
+      background-color: rgb(182, 182, 182);
+    }
   </style>
 
   <body>
     <nav>(place for nav-bar)</nav>
     <div class="slider-content">
       <div class="searchbox">
-        
-          <div class="search-input">
-            <a href="" target="_blank" hidden></a>
-            <input type="text" placeholder="Type to search places..">
-            <div class="autocom-box">
-              <!-- here list are inserted from javascript -->
-            </div>
-            <div class="icon"><i class="fas fa-search"></i></div>
+        <div class="search-input">
+          <a href="" target="_blank" hidden></a>
+          <input type="text" placeholder="Type to search places.." />
+          <div class="autocom-box">
+            <!-- here list are inserted from javascript -->
           </div>
-
+          <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
       </div>
 
       <div class="myslider_container">
@@ -51,7 +66,7 @@
         <div class="slider_image">
           <img src="slider-images/1.png" alt="" id="slider-images" />
         </div>
-        
+
         <button
           class="slidechange-btn right"
           id="right_slider"
@@ -61,12 +76,235 @@
         </button>
       </div>
     </div>
+
+    <div class="outermost-card-container">
+      <div class="head0">CHAR DHAM UTTARAKHAND</div>
+      <div class="card-container">
+        <div class="my-card reveal-left" id="card-1">
+          <img src="card-images/YAMUNOTRI.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Yamunotri Dham</div>
+            <div class="head2">
+              The source of River Yamuna, Yamunotri is also one of the four
+              sites of Char Dham pilgrimage. Yamunotri is located at a height of
+              3293 mts above sea level and located in Uttarkashi district. It is
+              surrounded by mountains on all sides and lies in close proximity
+              of the Indo-China border.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-up" id="card-2">
+          <img src="card-images/GANGOTRI.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Gangotri Dham</div>
+            <div class="head2">
+              One of the char dhams (the most sacred pilgrimage circuits in
+              northern India with four holy destinations), Gangotri, in
+              Uttarkashi, is a small town with the temple of Goddess Ganga at
+              its heart.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-right" id="card-3">
+          <img src="card-images/KEDARNATH.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Kedarnath Dham</div>
+            <div class="head2">
+              Kedarnath is a holy Hindu town located in Rudraprayag district of
+              Uttarakhand in India. It is one of the Char Dhams located in the
+              Himalayas. Kedarnath is situated at an astonishing height of 3584
+              meters above sea level near the head of Mandakini River.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-4">
+          <img src="card-images/BADRINATH.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Badrinath Dham</div>
+            <div class="head2">
+              The Badrinath Temple also known as the Badrinarayan Temple,
+              located in Uttarakhand's Badrinath town, is one of the four Char
+              Dhams (four important pilgrimages) in the state. There are four
+              pilgrim-destinations namely Yamunotri, Gangotri, Kedarnath, and
+              Badrinath, collectively known as Char Dham.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outermost-card-container">
+      <div class="head0">OTHER IMPORTANT PLACES TO VISIT</div>
+      <div class="card-container">
+        <div class="my-card reveal-left" id="card-5">
+          <img src="card-images/DEHRADUN.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Dehradun</div>
+            <div class="head2">
+              Dehradun is the capital of the Indian state of Uttarakhand, near
+              the Himalayan foothills. At its core is the 6-sided Ghanta Ghar
+              clock tower. To the southwest is Paltan Bazaar, a busy shopping
+              area. Just east is the Sikh temple Gurdwara Nanaksar, topped with
+              ornate white and golden domes.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-up" id="card-6">
+          <img src="card-images/NAINITAL.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Nainital</div>
+            <div class="head2">
+              Nainital, the charming Himalayan lake town, is a picture-postcard
+              perfect hill-station and one of the most popular in Northern
+              India. Commonly known as the ‘Lake District’, This beautiful town
+              in surrounded by seven hills, popularly known as ‘Sapta-Shring’ –
+              Ayarpata, Deopata, Handi-Bandi, Naina, Alma, Lariya-Kanta and
+              Sher-Ka-Danda.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-right" id="card-7">
+          <img src="card-images/MUSOORIE.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Musoorie</div>
+            <div class="head2">
+              Mussoorie, also known as Queen of the Hills, is among the most
+              popular hill stations of the country. A Britisher, Captain
+              Frederick Young, accompanied by an official named FJ Shore, had
+              climbed up the hill from the Doon valley in 1827 and found this
+              ridge offering great views and a salubrious climate. This visit
+              laid the foundation for this grand hill station.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-8">
+          <img src="card-images/RISHIKESH.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Rishikesh</div>
+            <div class="head2">
+              Set against the backdrop of the Himalayas and with the pristine
+              Ganga flowing through it, the ancient town of Rishikesh is one of
+              the major tourist and pilgrimage hubs in northern India, where
+              people from across the world arrive in search of peace. Rishikesh
+              is commonly referred to as the ‘yoga capital of the world’ and
+              rightly so.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-9">
+          <img src="card-images/HARIDWAR.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Haridwar</div>
+            <div class="head2">
+              One of the holiest pilgrimages in India, Haridwar, or the ‘gateway
+              to gods’, is located where Ganga, the sacredest of all Indian
+              rivers, enters the Indo-Gangetic plains. Located at the foothills
+              of the Himalayas, Haridwar is a city of temples and ashrams and
+              its pious ambience envelops everyone. Haridwar is one of the four
+              holy Indian cities that host the Kumbh Mela.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-10">
+          <img src="card-images/RANIKHET.png" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Ranikhet</div>
+            <div class="head2">
+              The charming hill station of Ranikhet is located in the Almora
+              district of Uttarakhand at an elevation of 1,829 mts above sea
+              level. The hill station Ranikhet, literally meaning -
+              Queens Land, is an all season tourist-spot for the admirers of the
+              natural beauty. Ranikhet is a place that reflects the best of the
+              great Himalayas.
+            </div>
+            <div class="head3">
+              
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="js/banner-searchbox-suggestions.js"></script>
+  <script src="js/randomcolor.js"></script>
+
   <script>
-    
     const slideimage = [
-    "slider-images/1.png",
+      "slider-images/1.png",
       "slider-images/2.png",
       "slider-images/3.png",
       "slider-images/4.png",
@@ -74,12 +312,14 @@
       "slider-images/6.png",
       "slider-images/7.png",
       "slider-images/8.png",
-      "slider-images/9.png"
+      "slider-images/9.png",
     ];
     let i = 0;
-    setInterval(sliderchangeFunc, 3000)
-    function sliderchangeFunc(){
-      if (i == slideimage.length){i = 0;}
+    setInterval(sliderchangeFunc, 3000);
+    function sliderchangeFunc() {
+      if (i == slideimage.length) {
+        i = 0;
+      }
       document.getElementById("slider-images").src = slideimage[i];
       i++;
     }
