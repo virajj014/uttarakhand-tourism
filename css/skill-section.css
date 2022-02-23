@@ -181,6 +181,14 @@
   border: 1px solid var(--card-color10);
 }
 
+#card-11 .card-data .head1,
+#card-11 .card-data .head3 button {
+  color: var(--card-color11);
+}
+#card-11 .card-data .head3 button,
+#card-11 {
+  border: 1px solid var(--card-color11);
+}
 
 @media (max-width: 700px) {
   .outermost-card-container .head0{

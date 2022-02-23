@@ -14,6 +14,8 @@ function randomtheme() {
   root.style.setProperty("--card-color8", myrandomcolor[Math.floor(Math.random() * myrandomcolor.length)]);
   root.style.setProperty("--card-color9", myrandomcolor[Math.floor(Math.random() * myrandomcolor.length)]);
   root.style.setProperty("--card-color10", myrandomcolor[Math.floor(Math.random() * myrandomcolor.length)]);
+  root.style.setProperty("--card-color11", myrandomcolor[Math.floor(Math.random() * myrandomcolor.length)]);
+
 
 }
 window.onload = randomtheme();
